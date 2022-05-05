@@ -1,0 +1,70 @@
+{% extends "AntiRubbish/base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+<body style="background-image: url('{% static 'img/background.jpg' %}');background-repeat:no-repeat; background-size: 100%;"></body>
+<link href="{% static 'app.css' %}" rel="stylesheet">
+<br>
+
+
+<div class="container-fluid">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="{% static 'img/plastic.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Plastic</h5>
+          <p class="card-text">Chiar și în țările
+            dezvoltate, rata reciclării plasticului colectat în gospodării nu depășește 50%; mai mult, o foarte mică
+            parte
+            din acest procent este ulterior convertit în ambalaje reutilizabile.</p>
+          <a href="#" class="btn btn-secondary">Read more</a>
+          <a href="#" class="btn btn-secondary">Go to map</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{% static 'img/ziare.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Foi</h5>
+          <p class="card-text">O treime din deșeuri aruncate sunt din hârtie. Se degradează repede și este consumat
+            mult. Pentru a recicla hartia, nu este 100% ecologic, si poate fi reciclată maximum de 5-7 ori, în acest
+            stadiu, fiind făcut carton pentru ouă.</p>
+          <a href="#" class="btn btn-secondary">Read more</a>
+          <a href="#" class="btn btn-secondary">Go to map</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{% static 'img/mancare.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mancare</h5>
+          <p class="card-text">Staticile arată că în țară sunt aruncate zilnic 6000 tone de alimente. Risipa mâancării este un factor generator de pierdere tuturor resurselor care le folosim pentru fabricarea hranei (teren, energie, materie primă, apă).</p>
+          <a href="#" class="btn btn-secondary">Read more</a>
+          <a href="#" class="btn btn-secondary">Go to map</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{% static 'img/metal.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Metale</h5>
+          <p class="card-text">Este adesea cauzată de plumb. Folosit intens în producerea de benzină între anii
+            1930-1970, nivelurile de plumb au fost estimate a fi de trei ori mai mari decât înainte de producerea
+            industrializării.</p>
+          <a href="#" class="btn btn-secondary">Read more</a>
+          <a href="#" class="btn btn-secondary">Go to map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
