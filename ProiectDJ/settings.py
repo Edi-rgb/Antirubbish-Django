@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'j_hp*cel9jk&qm^1wr+n!38^)+dw1r+d1x2dx4v_s2v@1kmlko'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [".run-eu-central1.goorm.io" , "127.0.0.1" , " * "]
+ALLOWED_HOSTS = [ 'antirubbish.herokuapp.com' , 'localhost' ]
 
 
 # Application definition
