@@ -7,3 +7,9 @@ h1{
     padding:0;
     transform: translateX(-50%) translateY(-50%);
 }
+
+body{
+    background-image: url('{% static 'img/background.jpg' %}');
+    background-repeat:no-repeat;
+    background-size: 100%;"
+}
