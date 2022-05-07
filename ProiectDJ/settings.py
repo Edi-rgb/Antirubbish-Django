@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'j_hp*cel9jk&qm^1wr+n!38^)+dw1r+d1x2dx4v_s2v@1kmlko'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [ 'antirubbish.herokuapp.com' , 'localhost' ]
+ALLOWED_HOSTS = [ 'antirubbish.herokuapp.com' ,  '127.0.0.1' ]
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -50,6 +51,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'ProiectDJ.urls'
 
@@ -117,13 +120,14 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
+# https://docs.djangoproject.com/en/2.2/howto/static-files/ 
+
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles" )
 
 STATIC_URL = '/static/'
 
 
-STATICFILES_DIRS=[
+'''STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'static')
-    ]
+    ]'''
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles" )
