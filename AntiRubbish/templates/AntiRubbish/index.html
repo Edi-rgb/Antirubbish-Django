@@ -9,7 +9,26 @@
 <link href="{% static 'index.css' %}" rel="stylesheet">
    
 
-<body style="background-image: url('{% static 'img/background.jpg' %}');background-repeat:no-repeat; background-size: 100%;"></body>
+<body style="background-image: url('{% static 'img/background.jpg' %}');background-repeat:no-repeat; background-size: 100%; @media min-width: 992px;"></body>
+
+
+
+<style>
+    #intro {
+      background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+      height: 100vh;
+    }
+
+    /* Height for devices larger than 576px */
+    @media (min-width: 992px) {
+      #intro {
+        margin-top: -58.59px;
+      }
+    }
+
+  </style>
+
+
 
 <script type="text/javascript">
     alert("This Website has been created by: D.Valentin & M.Tatiana.\n ©2022-2023 AntiRubbishTeam. All Rights Reserved.")
