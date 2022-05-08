@@ -20,11 +20,11 @@ def mancare(request):
 def mancare_map(request):
     return render(request, "AntiRubbish/mancare_map.html")
 
-def foi(request):
-    return render(request, "AntiRubbish/foi.html")
+def hartie(request):
+    return render(request, "AntiRubbish/hartie.html")
 
-def foi_map(request):
-    return render(request, "AntiRubbish/foi_map.html")
+def hartie_map(request):
+    return render(request, "AntiRubbish/hartie_map.html")
 
 def metale(request):
     return render(request, "AntiRubbish/metale.html")
