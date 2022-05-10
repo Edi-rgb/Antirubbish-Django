@@ -1,4 +1,4 @@
-h1{
+h1 {
     background-color: white;
     border-radius: 10px;
     width: 250px;
@@ -6,12 +6,37 @@ h1{
     position: absolute;
     top: 30%;
     left: 50%;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     transform: translateX(-50%) translateY(-50%);
 }
-body{
+
+body {
 
     background-color: #383838;
 
+}
+
+
+body {
+    font-family: 'Quicksand';
+    font-size: 17px;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
 }
