@@ -26,7 +26,7 @@ SECRET_KEY = 'j_hp*cel9jk&qm^1wr+n!38^)+dw1r+d1x2dx4v_s2v@1kmlko'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'antirubbish.herokuapp.com' ,  '127.0.0.1' ]
+ALLOWED_HOSTS = [ 'antirubbish.up.railway.app',  '127.0.0.1' ]
 
 
 # Application definition
