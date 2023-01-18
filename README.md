@@ -1,6 +1,6 @@
 
-Site ul este deja hostat gratuit cu ajutorul  site ului heroku.com :
-                                                                         https://antirubbish.herokuapp.com
+Site ul este deja hostat gratuit cu ajutorul  site ului railway :
+                                                                         https://antirubbish.up.railway.app/
 
 Daca se doreste hostarea locala a site ului  folositi comanda : 
                                                                  python manage.py runserver ( Windows)
